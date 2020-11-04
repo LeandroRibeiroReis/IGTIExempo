@@ -46,7 +46,6 @@ steps:
     configuration: '$(buildConfiguration)'
     testAssemblyVer2: '$(Build.SourcesDirectory)/test**.js'
 
-- task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
