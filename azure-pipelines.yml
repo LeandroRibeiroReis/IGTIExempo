@@ -46,9 +46,6 @@ steps:
     configuration: '$(buildConfiguration)'
     testAssemblyVer2: '$(Build.SourcesDirectory)/test**.js'
 
-  inputs:
-    pollingTimeoutSec: '300'
- 
 - task: CopyFiles@2
   inputs:
     contents: '**/*.*'
